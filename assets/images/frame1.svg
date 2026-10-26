@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 360">
+  <rect width="300" height="360" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="4"/>
+  <!-- Inner Photo Area -->
+  <rect x="16" y="16" width="268" height="268" fill="#1E293B" rx="2"/>
+  <!-- Blueprint drawing -->
+  <g stroke="#38BDF8" stroke-width="1.2" fill="none" opacity="0.85">
+    <rect x="40" y="40" width="140" height="180" stroke-dasharray="4,3"/>
+    <rect x="60" y="60" width="190" height="140"/>
+    <line x1="40" y1="40" x2="250" y2="200"/>
+    <circle cx="155" cy="130" r="50" stroke="#F59E0B"/>
+    <circle cx="155" cy="130" r="20" stroke="#38BDF8" stroke-dasharray="2,2"/>
+    <line x1="30" y1="130" x2="270" y2="130" stroke="#64748B" stroke-dasharray="4,4"/>
+    <line x1="155" y1="30" x2="155" y2="270" stroke="#64748B" stroke-dasharray="4,4"/>
+  </g>
+  <!-- Label below photo -->
+  <text x="150" y="312" font-family="Georgia, serif" font-style="italic" font-size="14" text-anchor="middle" fill="#334155">Studio drafting table, 2021</text>
+  <text x="150" y="332" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#94A3B8">Spatial geometry & foundations</text>
+</svg>

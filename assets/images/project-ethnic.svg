@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="desiOrangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E65100" />
+      <stop offset="40%" stop-color="#F57C00" />
+      <stop offset="100%" stop-color="#FF9800" />
+    </linearGradient>
+    <clipPath id="frameClip">
+      <rect width="540" height="500" rx="16" />
+    </clipPath>
+  </defs>
+
+  <!-- Background with rounded corners -->
+  <g clip-path="url(#frameClip)">
+    <rect width="540" height="500" fill="url(#desiOrangeGrad)" />
+
+    <!-- Concentric Sunburst / Indian Architectural Arches -->
+    <g fill="none" stroke="#FFFFFF" opacity="0.12">
+      <circle cx="270" cy="270" r="140" stroke-width="2" />
+      <circle cx="270" cy="270" r="180" stroke-width="2" stroke-dasharray="8 8" />
+      <circle cx="270" cy="270" r="230" stroke-width="2" />
+      <circle cx="270" cy="270" r="280" stroke-width="2" stroke-dasharray="12 12" />
+      <circle cx="270" cy="270" r="340" stroke-width="2" />
+    </g>
+
+    <!-- Stylized Traditional Ornamental Border Motifs -->
+    <g fill="#D84315" opacity="0.25">
+      <rect x="0" y="0" width="12" height="500" />
+      <rect x="528" y="0" width="12" height="500" />
+      <rect x="0" y="0" width="540" height="12" />
+      <rect x="0" y="488" width="540" height="12" />
+    </g>
+
+    <!-- Top Left Hashtag Banner: #देसीDaily -->
+    <text x="36" y="68" font-family="'Albert Sans', sans-serif" font-size="34" font-weight="800" fill="#FFFFFF" letter-spacing="-0.02em">#देसीDaily</text>
+
+    <!-- Indian Woman Illustration in Traditional Saree with Sunglasses -->
+    <g transform="translate(140, 110)">
+      <!-- Background halo / glow -->
+      <circle cx="130" cy="180" r="140" fill="#FFB74D" opacity="0.4" />
+
+      <!-- Shoulders & Saree Drape -->
+      <path d="M40 390 C40 290, 80 230, 130 220 C180 230, 220 290, 220 390 Z" fill="#C2410C" />
+      <!-- Teal Blouse sleeves -->
+      <path d="M48 300 C30 330, 20 370, 15 390 L80 390 C70 350, 60 320, 48 300 Z" fill="#00695C" />
+      <path d="M212 300 C230 330, 240 370, 245 390 L180 390 C190 350, 200 320, 212 300 Z" fill="#00695C" />
+
+      <!-- Rich Zari Embroidery / Gold Brocade Details -->
+      <path d="M80 260 Q130 290 180 260" stroke="#F59E0B" stroke-width="4" fill="none" />
+      <path d="M50 320 Q130 380 210 320" stroke="#FBBF24" stroke-width="3" fill="none" stroke-dasharray="6 4" />
+      <path d="M40 360 Q130 420 220 360" stroke="#F59E0B" stroke-width="3" fill="none" />
+
+      <!-- Neck & Collarbone -->
+      <rect x="115" y="170" width="30" height="55" rx="6" fill="#D98A6C" />
+      <!-- Gold Choker Necklace -->
+      <path d="M110 205 Q130 220 150 205" stroke="#FBBF24" stroke-width="5" fill="none" />
+      <circle cx="130" cy="216" r="4" fill="#D97706" />
+
+      <!-- Face -->
+      <ellipse cx="130" cy="140" rx="42" ry="50" fill="#E49B7F" />
+
+      <!-- Traditional Bindi -->
+      <circle cx="130" cy="118" r="3" fill="#991B1B" />
+
+      <!-- Trendy Modern Sunglasses (Round Black Designer Frames) -->
+      <g>
+        <circle cx="112" cy="136" r="17" fill="#18181B" stroke="#FBBF24" stroke-width="2.5" />
+        <circle cx="148" cy="136" r="17" fill="#18181B" stroke="#FBBF24" stroke-width="2.5" />
+        <line x1="128" y1="134" x2="132" y2="134" stroke="#FBBF24" stroke-width="2.5" />
+        <!-- Sunglasses Reflection Sheen -->
+        <path d="M104 128 L114 124" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+        <path d="M140 128 L150 124" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+      </g>
+
+      <!-- Nose & Smile -->
+      <path d="M130 142 L130 154 L134 156" stroke="#C27357" stroke-width="2" fill="none" stroke-linecap="round" />
+      <path d="M120 168 Q130 176 140 168" stroke="#991B1B" stroke-width="3" fill="none" stroke-linecap="round" />
+
+      <!-- Jhumka Earrings (Gold) -->
+      <g transform="translate(82, 142)">
+        <circle cx="3" cy="3" r="3" fill="#FBBF24" />
+        <path d="M-2 10 Q3 5 8 10 Z" fill="#F59E0B" />
+        <circle cx="3" cy="14" r="2" fill="#D97706" />
+      </g>
+      <g transform="translate(172, 142)">
+        <circle cx="3" cy="3" r="3" fill="#FBBF24" />
+        <path d="M-2 10 Q3 5 8 10 Z" fill="#F59E0B" />
+        <circle cx="3" cy="14" r="2" fill="#D97706" />
+      </g>
+
+      <!-- Traditional Indian Hairstyle (High Bun / Waves) -->
+      <path d="M88 140 C80 90, 110 60, 130 60 C150 60, 180 90, 172 140 C165 110, 155 95, 130 95 C105 95, 95 110, 88 140 Z" fill="#1C1917" />
+      <!-- Side Strands -->
+      <path d="M88 140 C85 165, 88 190, 92 210" stroke="#1C1917" stroke-width="5" fill="none" stroke-linecap="round" />
+      <path d="M172 140 C175 165, 172 190, 168 210" stroke="#1C1917" stroke-width="5" fill="none" stroke-linecap="round" />
+
+      <!-- Gold Bangles on Wrists -->
+      <g transform="translate(15, 330)">
+        <rect x="0" y="0" width="22" height="4" rx="2" fill="#FBBF24" />
+        <rect x="0" y="6" width="22" height="4" rx="2" fill="#D97706" />
+        <rect x="0" y="12" width="22" height="4" rx="2" fill="#FBBF24" />
+      </g>
+    </g>
+  </g>
+</svg>

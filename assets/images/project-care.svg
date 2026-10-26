@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 540" width="100%" height="100%">
+  <defs>
+    <clipPath id="cardClip">
+      <rect width="420" height="540" rx="24" />
+    </clipPath>
+    <clipPath id="illuClip">
+      <rect x="24" y="170" width="372" height="346" rx="20" />
+    </clipPath>
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D9E8ED" />
+      <stop offset="100%" stop-color="#C5DCE3" />
+    </linearGradient>
+    <linearGradient id="mirrorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8F2F5" />
+      <stop offset="100%" stop-color="#D5E6EC" />
+    </linearGradient>
+  </defs>
+
+  <!-- Card Body -->
+  <g clip-path="url(#cardClip)">
+    <rect width="420" height="540" fill="#F4F4F0" />
+
+    <!-- Top Text Header -->
+    <text x="210" y="70" text-anchor="middle" font-family="'Albert Sans', sans-serif" font-size="20" font-weight="600" fill="#2E707D" letter-spacing="-0.01em">UX Case-study</text>
+    <text x="210" y="105" text-anchor="middle" font-family="'Albert Sans', sans-serif" font-size="24" font-weight="700" fill="#1C3841" letter-spacing="-0.02em">
+      <tspan fill="#245F6D">Dantaayu</tspan>: Helping
+    </text>
+    <text x="210" y="136" text-anchor="middle" font-family="'Albert Sans', sans-serif" font-size="24" font-weight="700" fill="#111111" letter-spacing="-0.02em">Smiles to Stay Healthy</text>
+
+    <!-- Illustration Frame -->
+    <g clip-path="url(#illuClip)">
+      <!-- Bathroom Wall Background -->
+      <rect x="24" y="170" width="372" height="346" fill="url(#wallGrad)" />
+
+      <!-- Vertical Wall Stripes / Panels -->
+      <line x1="130" y1="170" x2="130" y2="520" stroke="#B8D3DC" stroke-width="2" opacity="0.6" />
+      <line x1="240" y1="170" x2="240" y2="520" stroke="#B8D3DC" stroke-width="2" opacity="0.6" />
+      <line x1="330" y1="170" x2="330" y2="520" stroke="#B8D3DC" stroke-width="2" opacity="0.6" />
+
+      <!-- Mirror Line / Edge -->
+      <rect x="150" y="170" width="246" height="346" fill="url(#mirrorGrad)" opacity="0.8" />
+      <line x1="150" y1="170" x2="150" y2="520" stroke="#FFFFFF" stroke-width="4" opacity="0.9" />
+
+      <!-- Towel Bar and Towel on Mirror Reflection -->
+      <rect x="200" y="320" width="36" height="60" rx="3" fill="#E8EDF2" />
+      <rect x="195" y="316" width="46" height="5" rx="2" fill="#718B97" />
+
+      <!-- Senior Citizen Character (Front View) -->
+      <!-- Green Sweater Shoulders -->
+      <path d="M40 540 C50 430, 90 390, 160 380 C200 375, 230 400, 250 430 C270 460, 280 500, 280 540 Z" fill="#2E5543" />
+      <!-- Sweater Collar -->
+      <path d="M125 385 C145 405, 175 405, 195 385 C185 415, 135 415, 125 385 Z" fill="#234234" />
+
+      <!-- Neck -->
+      <rect x="140" y="340" width="40" height="50" rx="10" fill="#E8A987" />
+
+      <!-- Head Base -->
+      <ellipse cx="160" cy="295" rx="58" ry="68" fill="#E8A987" />
+
+      <!-- White Hair -->
+      <path d="M102 285 C95 240, 120 200, 160 195 C205 195, 228 230, 222 280 C215 250, 200 230, 160 230 C125 230, 110 255, 102 285 Z" fill="#F4F4F6" stroke="#D1D5DB" stroke-width="1.5" />
+      <path d="M96 280 C90 260, 95 230, 120 215 C110 235, 110 265, 115 290 Z" fill="#E5E7EB" />
+      <ellipse cx="98" cy="295" rx="8" ry="14" fill="#E8A987" />
+      <ellipse cx="222" cy="295" rx="8" ry="14" fill="#E8A987" />
+
+      <!-- Cheeks Warm Glow -->
+      <circle cx="120" cy="315" r="14" fill="#EB7257" opacity="0.65" />
+      <circle cx="200" cy="315" r="14" fill="#EB7257" opacity="0.65" />
+
+      <!-- Nose -->
+      <ellipse cx="160" cy="295" rx="9" ry="14" fill="#D68A64" />
+
+      <!-- Round Glasses Frame -->
+      <circle cx="132" cy="285" r="20" fill="none" stroke="#222222" stroke-width="4.5" />
+      <circle cx="188" cy="285" r="20" fill="none" stroke="#222222" stroke-width="4.5" />
+      <line x1="152" y1="285" x2="168" y2="285" stroke="#222222" stroke-width="4.5" />
+      <!-- Glasses Temple -->
+      <line x1="112" y1="282" x2="98" y2="288" stroke="#222222" stroke-width="3.5" />
+      <line x1="208" y1="282" x2="222" y2="288" stroke="#222222" stroke-width="3.5" />
+
+      <!-- Happy Eyes behind Glasses -->
+      <path d="M124 285 Q132 278 140 285" fill="none" stroke="#111111" stroke-width="3.5" stroke-linecap="round" />
+      <path d="M180 285 Q188 278 196 285" fill="none" stroke="#111111" stroke-width="3.5" stroke-linecap="round" />
+
+      <!-- Smiling Open Teeth Mouth -->
+      <path d="M136 325 Q160 348 184 325 Z" fill="#FFFFFF" stroke="#9E4D38" stroke-width="2" />
+      <line x1="140" y1="326" x2="180" y2="326" stroke="#E2E8F0" stroke-width="1.5" />
+      <!-- Teeth division marks -->
+      <line x1="152" y1="325" x2="152" y2="333" stroke="#CBD5E1" stroke-width="1" />
+      <line x1="160" y1="325" x2="160" y2="335" stroke="#CBD5E1" stroke-width="1" />
+      <line x1="168" y1="325" x2="168" y2="333" stroke="#CBD5E1" stroke-width="1" />
+
+      <!-- Flossing Hands & String -->
+      <line x1="130" y1="334" x2="190" y2="332" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" filter="drop-shadow(0 1px 2px rgba(0,0,0,0.2))" />
+      <!-- Left Hand Fingers holding floss -->
+      <ellipse cx="126" cy="336" rx="10" ry="8" fill="#E8A987" />
+      <ellipse cx="120" cy="342" rx="7" ry="6" fill="#D68A64" />
+      <!-- Right Hand Fingers holding floss -->
+      <ellipse cx="194" cy="334" rx="10" ry="8" fill="#E8A987" />
+      <ellipse cx="200" cy="340" rx="7" ry="6" fill="#D68A64" />
+
+      <!-- Mirror Reflection of Back/Side of Character (Right side of frame) -->
+      <g opacity="0.85">
+        <path d="M300 450 C290 390, 310 350, 370 330 C420 310, 440 370, 440 450 Z" fill="#E89B77" />
+        <path d="M330 330 C310 360, 305 400, 300 450 C360 440, 400 420, 410 390 Z" fill="#D68A64" />
+        <!-- Reflection Cheek Glow -->
+        <circle cx="340" cy="380" r="16" fill="#EB7257" opacity="0.6" />
+        <!-- Reflection Glasses Arm -->
+        <path d="M315 365 C320 355, 335 350, 345 352" fill="none" stroke="#222222" stroke-width="4" />
+        <ellipse cx="330" cy="370" r="10" ry="14" fill="none" stroke="#222222" stroke-width="4" />
+        <!-- Floss reflection hand -->
+        <ellipse cx="320" cy="420" rx="14" ry="10" fill="#D68A64" />
+        <line x1="312" y1="416" x2="335" y2="410" stroke="#FFFFFF" stroke-width="3" />
+      </g>
+    </g>
+  </g>
+</svg>
