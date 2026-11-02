@@ -48,6 +48,8 @@ html {
   font-size: 16px;
   background-color: var(--bg-primary);
   color: var(--text-main);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -58,6 +60,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-primary);
   overflow-x: hidden;
+  width: 100%;
   position: relative;
 }
 
@@ -1393,12 +1396,34 @@ body.show-grid .blueprint-grid-overlay {
     --header-height: 70px;
   }
 
+  .ruler-line::before,
+  .ruler-line::after,
+  .site-header::after {
+    display: none !important;
+  }
+
+  .full-page-arch-line-left,
+  .full-page-arch-line-right {
+    display: none !important;
+  }
+
+  .arch-frame-container {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    box-sizing: border-box !important;
+  }
+
   .top-arch-spacer {
-    height: 24px;
+    height: 20px;
   }
 
   .site-header {
-    padding: 0 20px;
+    padding: 0 16px;
+    border-bottom: 1px solid var(--border-line);
   }
 
   .brand-logo {
@@ -1542,10 +1567,15 @@ body.show-grid .blueprint-grid-overlay {
     max-width: 100% !important;
     flex: 0 0 auto !important;
     height: auto !important;
+    min-height: auto !important;
     border-right: none !important;
     border-bottom: var(--line-thickness) solid var(--border-line);
     padding: 24px 20px !important;
     order: 1 !important;
+  }
+
+  .project-placeholder-box {
+    min-height: 240px !important;
   }
 
   .project-info {
@@ -1663,6 +1693,84 @@ body.show-grid .blueprint-grid-overlay {
   }
 }
 
+@media (max-width: 480px) {
+  :root {
+    --page-margin-sides: 0px;
+    --page-margin-top: 12px;
+    --header-height: 60px;
+  }
+
+  .arch-frame-container {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .brand-logo {
+    font-size: 1.5rem !important;
+  }
+
+  .hero-quote {
+    font-size: 1.85rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .hero-description {
+    font-size: 0.95rem !important;
+  }
+
+  .hero-portrait {
+    max-width: 260px !important;
+    height: auto !important;
+  }
+
+  .process-header-banner h2,
+  .section-header-banner h2,
+  .about-header-banner h2 {
+    font-size: 22px !important;
+  }
+
+  .process-quote {
+    font-size: 20px !important;
+  }
+
+  .process-step-row .step-title {
+    font-size: 18px !important;
+  }
+
+  .process-step-row .step-desc {
+    font-size: 14.5px !important;
+  }
+
+  .project-title {
+    font-size: 24px !important;
+  }
+
+  .project-subtitle {
+    font-size: 16px !important;
+  }
+
+  .project-description {
+    font-size: 14px !important;
+  }
+
+  .about-subheading {
+    font-size: 28px !important;
+  }
+
+  .about-bio-text p {
+    font-size: 17px !important;
+    line-height: 1.55 !important;
+  }
+
+  .footer-left-col .footer-heading {
+    font-size: 28px !important;
+  }
+
+  .footer-contact-item {
+    font-size: 15px !important;
+  }
+}
+
 /* ==========================================================================
    HORIZONTAL INLINE CARD TABS (Opens flush with card borders)
    ========================================================================== */
@@ -1685,11 +1793,19 @@ body.show-grid .blueprint-grid-overlay {
   flex-direction: column;
   transform: translateX(100%);
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, visibility 0.4s ease;
+}
+
+.project-card-tab:not(.active) {
+  display: none !important;
+  visibility: hidden !important;
 }
 
 .project-card-tab.active {
+  display: flex !important;
+  visibility: visible !important;
   transform: translateX(0);
   opacity: 1;
   pointer-events: auto;

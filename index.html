@@ -44,6 +44,12 @@
       pointer-events: none;
       z-index: 150;
     }
+    @media (max-width: 768px) {
+      .full-page-arch-line-left,
+      .full-page-arch-line-right {
+        display: none !important;
+      }
+    }
 
     .project-visual.has-placeholder {
       padding: 0 !important;
@@ -74,10 +80,17 @@
       flex-direction: column;
       transform: translateX(100%);
       opacity: 0;
+      visibility: hidden;
       pointer-events: none;
-      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, visibility 0.4s ease;
+    }
+    .project-card-tab:not(.active) {
+      display: none !important;
+      visibility: hidden !important;
     }
     .project-card-tab.active {
+      display: flex !important;
+      visibility: visible !important;
       transform: translateX(0);
       opacity: 1;
       pointer-events: auto;
